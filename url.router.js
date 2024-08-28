@@ -7,27 +7,27 @@ document.addEventListener("click", (e) => {
 
 const urlRoutes = {
   404: {
-    template: "templates/404.html",
+    template: "reddit-clone-frontend/templates/404.html",
     title: "Not found",
     description: "404 page",
   },
   "/": {
-    template: "templates/index.html",
+    template: "reddit-clone-frontend/templates/index.html",
     title: "Home page",
     description: "home page",
   },
-  "reddit-clone-frontend/about": {
-    template: "templates/about.html",
+  about: {
+    template: "reddit-clone-frontend/templates/about.html",
     title: "About this app",
     description: "about page",
   },
   "/contact": {
-    template: "templates/contact.html",
+    template: "reddit-clone-frontend/templates/contact.html",
     title: "About this app",
     description: "about page",
   },
   "/info": {
-    template: "templates/info.html",
+    template: "reddit-clone-frontend/templates/info.html",
     title: "About this app",
     description: "about page",
   },
