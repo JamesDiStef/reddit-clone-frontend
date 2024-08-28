@@ -16,7 +16,7 @@ const urlRoutes = {
     title: "Home page",
     description: "home page",
   },
-  about: {
+  "/about": {
     template: "reddit-clone-frontend/templates/about.html",
     title: "About this app",
     description: "about page",
