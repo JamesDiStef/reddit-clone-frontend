@@ -17,12 +17,12 @@ const urlRoutes = {
     description: "home page",
   },
   "/home": {
-    template: "reddit-clone-frontend/index.html",
+    template: "reddit-clone-frontend/templates/contact.html",
     title: "Home page",
     description: "home page",
   },
   "/about": {
-    template: "reddit-clone-frontend/templates/about.html",
+    template: "reddit-clone-frontend/templates/contact.html",
     title: "About this app",
     description: "about page",
   },
