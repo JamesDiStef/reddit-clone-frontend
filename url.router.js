@@ -33,7 +33,7 @@ const urlRoutes = {
   },
   "/info": {
     template: "reddit-clone-frontend/templates/info.html",
-    title: "About this app again",
+    title: "About this app",
     description: "about page",
   },
 };
