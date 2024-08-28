@@ -12,7 +12,7 @@ const urlRoutes = {
     description: "404 page",
   },
   "/": {
-    template: "reddit-clone-frontend/templates/index.html",
+    template: "reddit-clone-frontend/index.html",
     title: "Home page",
     description: "home page",
   },
