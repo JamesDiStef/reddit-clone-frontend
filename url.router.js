@@ -7,7 +7,7 @@ document.addEventListener("click", (e) => {
 
 const urlRoutes = {
   404: {
-    template: "reddit-clone-frontend-templates/404.html",
+    template: "reddit-clone-frontend/templates/404.html",
     title: "Not found",
     description: "404 page",
   },
