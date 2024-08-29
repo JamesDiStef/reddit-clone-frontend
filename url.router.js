@@ -7,32 +7,32 @@ document.addEventListener("click", (e) => {
 
 const urlRoutes = {
   404: {
-    template: "reddit-clone-frontend/templates/404.html",
+    template: "templates/404.html",
     title: "Not found",
     description: "404 page",
   },
   "/": {
-    template: "reddit-clone-frontend/index.html",
+    template: "index.html",
     title: "Home page",
     description: "home page",
   },
   "/home": {
-    template: "reddit-clone-frontend/index.html",
+    template: "index.html",
     title: "Home page",
     description: "home page",
   },
   "/about": {
-    template: "reddit-clone-frontend/templates/about.html",
+    template: "templates/about.html",
     title: "About this app",
     description: "about page",
   },
   "/contact": {
-    template: "reddit-clone-frontend/templates/contact.html",
+    template: "templates/contact.html",
     title: "About this app",
     description: "about page",
   },
   "/info": {
-    template: "reddit-clone-frontend/templates/info.html",
+    template: "templates/info.html",
     title: "About this app",
     description: "about page",
   },
@@ -59,24 +59,26 @@ const urlLocationhandler = async () => {
 
 const button = document.querySelector("button");
 
-button.addEventListener("click", (event) => {
-  console.log("hey ");
-  fetch(
-    "https://us-central1-xenon-heading-433720-j4.cloudfunctions.net/api/subscribers"
-  )
-    .then((response) => {
-      console.log(response);
-      // If the response is not 2xx, throw an error
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
+window.addEventListener("DOMContentLoaded", (event) => {
+  button.addEventListener("click", (event) => {
+    console.log("hey ");
+    fetch(
+      "https://us-central1-xenon-heading-433720-j4.cloudfunctions.net/api/subscribers"
+    )
+      .then((response) => {
+        console.log(response);
+        // If the response is not 2xx, throw an error
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
 
-      // If the response is 200 OK, return the response in JSON format.
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      document.getElementById("morestuff").innerHTML = data[0].name;
-    })
-    .catch((error) => console.error("Fetch error:", error)); // In case of an error, it will be captured and logged.
+        // If the response is 200 OK, return the response in JSON format.
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        document.getElementById("morestuff").innerHTML = data[0].name;
+      })
+      .catch((error) => console.error("Fetch error:", error)); // In case of an error, it will be captured and logged.
+  });
 });
