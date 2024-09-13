@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html", "templates/**.{html,js}", "./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        small: "700px",
+      },
+    },
   },
   plugins: [require("daisyui")],
 };
