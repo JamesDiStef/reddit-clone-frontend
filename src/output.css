@@ -8644,6 +8644,10 @@ html:has(.drawer-open.drawer-open) {
   height: 100vh;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
 .w-96 {
   width: 24rem;
 }
@@ -8662,6 +8666,10 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .flex-shrink {
@@ -9645,6 +9653,21 @@ html:has(.drawer-open.drawer-open) {
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
 }
 
+.bg-green-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-green-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -9985,6 +10008,11 @@ html:has(.drawer-open.drawer-open) {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
 }
 
 .underline {
