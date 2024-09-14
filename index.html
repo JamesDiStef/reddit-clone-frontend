@@ -6,67 +6,79 @@
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body>
-    <body>
-      <div class="truncate">
-        <div>
-          <div class="container">
-            <div id="main">
-              <nav class="text-3xl">
-                <a href="/home">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/info">Info</a>
-              </nav>
+    <div class="truncate">
+      <div>
+        <div class="container">
+          <div id="main">
+            <nav class="text-3xl">
+              <a href="/home">Home</a>
+              <a href="/about">About</a>
+              <a href="/contact">Contact</a>
+              <a href="/info">Resume</a>
+            </nav>
+          </div>
+        </div>
+        <div
+          id="stuff"
+          class="h-auto w-full bg-gradient-to-tr from-orange-100 to-orange-400 from-20% to-90%"
+        >
+          <div class="mx-auto text-center">
+            <button class="btn">Call My API</button>
+          </div>
+          <div
+            id="morestuff"
+            class="mx-auto mt-36 text-3xl text-center text-blue-400"
+          >
+            Placeholder
+          </div>
+
+          <div class="flex w-full flex-col border-opacity-50">
+            <div class="divider h-20"></div>
+          </div>
+
+          <div class="md:flex w-full sm:flex-row">
+            <div class="mx-auto card bg-base-100 w-96 shadow-xl">
+              <figure>
+                <img src="picture-for-building.avif" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-wrap">
+                  I'm a front end software engineer who likes building things
+                </h2>
+                <div class="card-actions">
+                  <a
+                    href="https://github.com/JamesDiStef"
+                    class="btn btn-primary"
+                    >Checkout my GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="divider h-20"></div>
+
+            <div class="mx-auto card bg-base-100 w-96 shadow-xl">
+              <figure>
+                <img src="picture-for-building.avif" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-wrap">
+                  I build apps like this with html and css libraries, but I
+                  build them with frameworks too
+                </h2>
+                <div class="card-actions">
+                  <a
+                    href="https://github.com/JamesDiStef"
+                    class="btn btn-primary"
+                    >NextJS project Pending</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-        <div id="stuff"  class="h-auto w-full bg-gradient-to-tr from-orange-100 to-orange-400 from-20% to-90%">
-            <div class="mx-auto text-center">
-              <button class="btn">Call My API</button>
-            </div>
-            <div id="morestuff" class="mx-auto mt-36 text-3xl text-center text-blue-400">
-              Placeholder
-            </div>
-
-            <div class="flex w-full flex-col border-opacity-50">
-              <div class="divider h-20"></div>
-
-            </div>
-
-            <div class="md:flex w-full sm:flex-row">
-
-              <div class="mx-auto card bg-base-100 w-96 shadow-xl">
-                <figure>
-                  <img
-                    src="picture-for-building.avif"
-                    alt="Shoes" />
-                </figure>
-                <div class="card-body items-center">
-                  <h2 class="card-title text-wrap">I'm a front end software engineer who likes building things</h2>
-                  <div class="card-actions ">
-                    <a href="https://github.com/JamesDiStef" class="btn btn-primary">Checkout my GitHub</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mx-auto card bg-base-100 w-96 shadow-xl">
-                <figure>
-                  <img
-                    src="picture-for-building.avif"
-                    alt="Shoes" />
-                </figure>
-                <div class="card-body items-center">
-                  <h2 class="card-title text-wrap">I build apps like this with html and css libraries, but I build them with frameworks too</h2>
-                  <div class="card-actions ">
-                    <a href="https://github.com/JamesDiStef" class="btn btn-primary">NextJS project Pending</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
         </div>
       </div>
-      <script src="./url.router.js"></script>
-    </body>
+    </div>
+    <script src="./url.router.js"></script>
   </body>
 </html>
