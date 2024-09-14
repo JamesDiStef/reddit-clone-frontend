@@ -77,7 +77,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       })
       .then((data) => {
         console.log(data);
-        document.getElementById("morestuff").innerHTML = data[0].name;
+        document.getElementById("morestuff").innerHTML = "Jenna";
       })
       .catch((error) => console.error("Fetch error:", error)); // In case of an error, it will be captured and logged.
   });
